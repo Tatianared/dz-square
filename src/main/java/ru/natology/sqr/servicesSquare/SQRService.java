@@ -1,17 +1,22 @@
 package ru.natology.sqr.servicesSquare;
 
 public class SQRService {
-    public int total(int square, int result) {
+    public int total(int result) {
         int min = 200;
         int max = 300;
-        int i;
-        for (i = 10; i < 99; i++) {
-            square = i * i;
-            if (square >= min && square <= max) {
-                return result++;
+        result = 0;
+        for (int i = 10; i <= 99; i++) {
+            if ((i * i) > min && (i * i) < max) {
+                result++;
             }
 
+
         }
-        return -1;
+        return 0;
+
     }
 }
+
+
+
+

@@ -11,22 +11,22 @@ public class SQRServiceTest {
         SQRService service = new SQRService();
 
         int expected = 3;
-        int actual = service.total(200, 300, 289, 3);
+        int actual = service.total(200, 300);
 
         assertEquals(expected, actual);
 
     }
-
 
     @Test
-    public void sqrMoreMinToMax() {
+    public void sqrMinToMaxSecond() {
         SQRService service = new SQRService();
 
-        int expected = 3;
-        int actual = service.total(200, 300, 9801, 3);
+        int expected = 13;
+        int actual = service.total(100, 500);
 
         assertEquals(expected, actual);
 
     }
+
 }
 

@@ -8,15 +8,17 @@ public class SQRService {
         for (i = 10; i <= 99; i++) {
             if ((i * i) > min && (i * i) < max) {
                 result++;
-                return result;
+
             }
 
-
         }
-        return -1;
-
+        return result;
     }
 }
+
+
+
+
 
 
 

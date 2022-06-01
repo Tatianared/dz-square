@@ -4,34 +4,14 @@ import ru.natology.sqr.servicesSquare.SQRService;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SQRServiceTest {
-    @Test
-    public void sqrLessMinToMax() {
-        SQRService service = new SQRService();
 
-        int expected = 0;
-        int actual = service.total(100, 0);
-
-        assertEquals(expected, actual);
-
-    }
 
     @Test
     public void sqrMinToMaxFirst() {
         SQRService service = new SQRService();
 
-        int expected = 1;
-        int actual = service.total(225, 1);
-
-        assertEquals(expected, actual);
-
-    }
-
-    @Test
-    public void sqrMinToMaxSecond() {
-        SQRService service = new SQRService();
-
-        int expected = 2;
-        int actual = service.total(256, 2);
+        int expected = 3;
+        int actual = service.total(200, 300, 289, 3);
 
         assertEquals(expected, actual);
 
@@ -43,7 +23,7 @@ public class SQRServiceTest {
         SQRService service = new SQRService();
 
         int expected = 3;
-        int actual = service.total(9801,3 );
+        int actual = service.total(200, 300, 9801, 3);
 
         assertEquals(expected, actual);
 
